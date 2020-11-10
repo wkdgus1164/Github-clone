@@ -39,9 +39,42 @@
 
     <!-- Font 추가 -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    Hello World!
+    <!--
+        "BEM CSS 작명 규칙"
+
+        - __ : ~의 일부분이다.
+
+        <div class="container">
+            <div class="container__item"></div>
+        </div>
+
+        -------------------------------------------
+
+        특정 컴포넌트의 상태를 부여하는 경우.
+        컴포넌트--상태
+
+        <div class="btn--success"></div>
+        <div class="btn--danger"></div>
+        <div class="btn--warning"></div>
+
+        -------------------------------------------
+    
+        띄어쓰기가 포함되는 경우.
+
+        toggle-btn
+    -->
+
+    <div class="body__container">
+        
+    </div>
+    <ul>
+        <li>123</li>
+        <li>456</li>
+        <li>789</li>
+    </ul>
 </body>
 </html>

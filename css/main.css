@@ -1,4 +1,11 @@
-body {
+.body__container {
     font-family: 'Roboto', sans-serif;
-    font-size: 100px;
+
+    /* 일반적인 기본 폰트 크기 */
+    font-size: 16px;
+
+    /* 일반적인 폰트 굵기 (Regular) */
+    font-weight: 400;
+    
+    color: #333;
 }
