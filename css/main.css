@@ -1,17 +1,16 @@
 /* COMMON */
+
 .body__container {
     font-family: 'Roboto', sans-serif;
-
     /* 일반적인 기본 폰트 크기 */
     font-size: 16px;
-
     /* 일반적인 폰트 굵기 (Regular) */
     font-weight: 400;
-    
     color: #333;
 }
 
 /* BTN */
+
 .btn {
     height: 34px;
     background: #eee linear-gradient(to bottom, #fcfcfc, #eee);
@@ -24,10 +23,8 @@
     font-weight: 500;
     line-height: 1.5;
     cursor: pointer;
-
     /* border와 padding을 추가할 경우 전체적인 크기를 고정하는 속성 */
     box-sizing: border-box;
-
     position: relative;
 }
 
@@ -47,29 +44,23 @@
     background: #55a532 linear-gradient(#91dd70, #55ae2e);
 }
 
-.btn.btn--danger {
+.btn.btn--danger {}
 
-}
-
-.btn.btn-warning {
-
-}
+.btn.btn-warning {}
 
 /* INPUT TEXT */
+
 .input--text {
     height: 34px;
     padding: 0 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box;
-
     /* 포커스할 시 아웃라인 */
     outline: none;
-
     /* 컴포넌트의 그림자 */
     /* inset : 박스의 안쪽에 그림자 */
     box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.075);
-
     font-size: 16px;
 }
 
@@ -79,17 +70,75 @@
 }
 
 /* Vendor Prefix : 브라우저 업체별 접두사 */
+
 /* Chrome */
+
 .input--text::-webkit-input-placeholder {
     color: #cacaca;
 }
 
 /* IE, Edge */
+
 .input--text::-ms-input-placeholder {
     color: #cacaca;
 }
 
 /* Mozilla Firefox */
+
 .input--text::-moz-input-placeholder {
     color: #cacaca;
+}
+
+/* HEADER */
+
+header {
+    border-bottom: 1px solid rgba(0, 0, 0, .75);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .75);
+    background: #FFF;
+}
+
+header .inner {
+    max-width: 980px;
+    height: 78px;
+    margin: 0 auto;
+}
+
+header .menu-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .logo {
+    margin-right: 10px;
+}
+
+header .logo a {
+    background: url("../img/logo.svg");
+    width: 32px;
+    height: 32px;
+    display: block;
+
+    /* 이미지만 보이도록 텍스트 감추기 */
+    text-indent: -9999px;
+}
+
+header .logo a:hover {
+    background: url("../img/logo_on.svg");
+}
+
+header .main-menu {
+    display: flex;
+}
+
+header .main-menu li a {
+    display: block;
+    padding: 10px;
+    color: #3c4146;
+}
+
+header .main-menu li a:hover {
+    display: block;
+    padding: 10px;
+    color: #4078c0;
 }
