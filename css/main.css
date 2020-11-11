@@ -262,6 +262,11 @@ header .sub-menu li a:hover {
     display: flex;
 }
 
+.section--visual .summary {
+    flex: 1;
+    margin-right: 90px;
+}
+
 .section--visual .summary__title {
     color: white;
     font-size: 54px;
@@ -277,6 +282,7 @@ header .sub-menu li a:hover {
 
 #sign-form {
     width: 340px;
+    margin-top: 16px;
 }
 
 #sign-form li {
@@ -284,7 +290,7 @@ header .sub-menu li a:hover {
 }
 
 #sign-form li:last-child {
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
 }
 
 #sign-form .input--text {
