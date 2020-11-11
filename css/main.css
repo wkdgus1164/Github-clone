@@ -2,11 +2,13 @@
 
 .body__container {
     font-family: 'Roboto', sans-serif;
-    /* 일반적인 기본 폰트 크기 */
-    font-size: 16px;
-    /* 일반적인 폰트 굵기 (Regular) */
-    font-weight: 400;
+    font-size: 16px; /* 일반적인 기본 폰트 크기 */
+    font-weight: 400; /* 일반적인 폰트 굵기 (Regular) */
     color: #333;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* BTN */
@@ -23,9 +25,9 @@
     font-weight: 500;
     line-height: 1.5;
     cursor: pointer;
-    /* border와 padding을 추가할 경우 전체적인 크기를 고정하는 속성 */
-    box-sizing: border-box;
+    box-sizing: border-box; /* border와 padding을 추가할 경우 전체적인 크기를 고정하는 속성 */
     position: relative;
+    color: #333;
 }
 
 .btn:hover::before {
