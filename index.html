@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>GitHub</title>
 
     <!-- 페이지 작성자 -->
-    <meta name="author"content="Han">
+    <meta name="author" content="Han">
 
     <!-- 페이지 설명 -->
     <meta name="description" content="Github is where people build software.">
 
     <!-- 반응형 뷰포트 작성; 너비:디바이스의 너비, 기본 확대 정도:1, 사용자 확대가능여부:x, 최소 확대 정도:1, 최대 확대 정도:1  -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1, minimum-scale=1">
 
     <!-- IE 8 이상 최신 표준 브라우저에서 렌더링 가능 -->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -42,6 +44,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
     <!--
         "BEM CSS 작명 규칙"
@@ -74,8 +77,8 @@
         <header class="section">
 
             <!-- 요소들을 가운데로 몰아주는 역할 -->
-            <div class="inner">
-                <div class="menu-group">
+            <div class="inner clearfix">
+                <div class="menu-group float--left">
                     <div class="logo">
                         <a href="#">GitHub</a>
                     </div>
@@ -86,7 +89,7 @@
                         <li><a href="#">Explore</a></li>
                     </ul>
                 </div>
-                <div class="sign-group">
+                <div class="sign-group float--right">
                     <div class="btn-group">
                         <a href="#" class="btn sign-in">Sign in</a>
                         <a href="#" class="btn btn--primary sign-up">Sign up</a>
@@ -96,11 +99,14 @@
                         <input type="submit" value="Submit">
                     </form>
                     <ul class="sub-menu">
-                        <li></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Support</a></li>
                     </ul>
                 </div>
             </div>
         </header>
     </div>
 </body>
+
 </html>

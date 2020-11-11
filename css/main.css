@@ -2,8 +2,10 @@
 
 .body__container {
     font-family: 'Roboto', sans-serif;
-    font-size: 16px; /* 일반적인 기본 폰트 크기 */
-    font-weight: 400; /* 일반적인 폰트 굵기 (Regular) */
+    font-size: 16px;
+    /* 일반적인 기본 폰트 크기 */
+    font-weight: 400;
+    /* 일반적인 폰트 굵기 (Regular) */
     color: #333;
 }
 
@@ -25,7 +27,8 @@ a {
     font-weight: 500;
     line-height: 1.5;
     cursor: pointer;
-    box-sizing: border-box; /* border와 padding을 추가할 경우 전체적인 크기를 고정하는 속성 */
+    box-sizing: border-box;
+    /* border와 padding을 추가할 경우 전체적인 크기를 고정하는 속성 */
     position: relative;
     color: #333;
 }
@@ -91,6 +94,22 @@ a {
     color: #cacaca;
 }
 
+/* FLOAT CLEARFIX */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.float--left {
+    float: left;
+}
+
+.float--right {
+    float: right;
+}
+
 /* HEADER */
 
 header {
@@ -120,9 +139,8 @@ header .logo a {
     width: 32px;
     height: 32px;
     display: block;
-
-    /* 이미지만 보이도록 텍스트 감추기 */
     text-indent: -9999px;
+    /* 이미지만 보이도록 텍스트 감추기 */
 }
 
 header .logo a:hover {
@@ -142,5 +160,50 @@ header .main-menu li a {
 header .main-menu li a:hover {
     display: block;
     padding: 10px;
+    color: #4078c0;
+}
+
+header .sign-group {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+header .btn-group {
+    order: 2;
+    display: flex;
+}
+
+header .btn-group .sign-in {
+    margin-right: 4px;
+}
+
+#search-form {
+    order: 1;
+    margin-right: 12px;
+}
+
+#search {
+    width: 160px;
+    font-size: 14px;
+}
+
+#search + [type="submit"] {
+    display: none;
+}
+
+header .sub-menu {
+    display: flex;
+    margin-right: 10px;
+}
+
+header .sub-menu li a {
+    padding: 8px;
+    display: block;
+    font-size: 13px;
+    color: #3c4146;
+}
+
+header .sub-menu li a:hover {
     color: #4078c0;
 }
