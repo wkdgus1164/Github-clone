@@ -390,9 +390,8 @@ header .sub-menu li a:hover {
 }
 
 /* WHERE IS */
-.section--where-is {
 
-}
+.section--where-is {}
 
 .section--where-is .inner {
     padding-top: 80px;
@@ -409,6 +408,7 @@ header .sub-menu li a:hover {
 }
 
 /* PRICING CARD */
+
 .section--pricing {
     background: linear-gradient(#f5f5f5, #fff);
 }
@@ -445,9 +445,8 @@ header .sub-menu li a:hover {
 }
 
 /* FOOTER */
-footer {
 
-}
+footer {}
 
 footer .inner {
     padding: 50px 0;
@@ -464,11 +463,11 @@ footer .site-links li {
     color: #767676;
 }
 
-footer .site-links  a {
+footer .site-links a {
     color: #4078c0;
 }
 
-footer .site-links  a:hover {
+footer .site-links a:hover {
     text-decoration: underline;
 }
 
@@ -485,4 +484,36 @@ footer .logo {
 
 footer .logo:hover svg {
     fill: #4078c0;
+}
+
+/* MEDIA */
+
+@media (max-width: 1024px) {
+    header.section .inner {
+        max-width: none;
+        height: auto;
+        padding: 0 20px;
+    }
+    header .menu-group, header .sign-group {
+        float: none;
+    }
+
+    header .toggle {
+        display: none;
+    }
+
+    header .logo {
+        padding: 12px 0;   
+    }
+
+    #toggle-btn {
+        background: url("../img/toggle-btn.svg");
+        width: 18px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        right: 20px;
+        cursor: pointer;
+        text-indent: -9999px;
+    }
 }
