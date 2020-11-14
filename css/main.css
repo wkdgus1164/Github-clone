@@ -558,6 +558,10 @@ footer .logo:hover svg {
         display: none;
     }
 
+    header .toggle.on {
+        display: block;
+    }
+
     #toggle-btn {
         background: url("../img/toggle-btn.svg");
         width: 18px;
